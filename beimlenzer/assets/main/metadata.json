@@ -1,0 +1,27 @@
+{
+  "title": "Ferienhaus „Beim Lenzer“: Ferienwohnungen in Schwangau - Urlaub im Allgäu",
+  "description": "Verbringen Sie Ihren Urlaub im Ferienhaus \"Beim Lenzer\" in sehr ruhiger Lage am Ortsrand von Schwangau - entweder in einer komfortablen Ferienwohnung oder in einem gemütlich eingerichteten Gästezimmer. Die Ferienwohnungen sind alle mit Balkon oder Terrasse ausgestattet, damit Sie bei Ihrem Urlaub im Allgäu den herrlichen Bergblick genießen können.",
+  "images": [
+    {
+      "src": "assets/main/img-01.jpg",
+      "alt": "Ferienhaus \"Beim Lenzer\""
+    },
+    {
+      "src": "assets/main/img-02.jpg",
+      "alt": "Ferienhaus \"Beim Lenzer\""
+    },
+    {
+      "src": "assets/main/img-03.jpg",
+      "alt": "Blick auf Schwangau-Horn"
+    },
+    {
+      "src": "assets/main/img-04.jpg",
+      "alt": "Ferienwohnung ****/*****"
+    },
+    {
+      "src": "assets/main/img-05.jpg",
+      "alt": "Privatzimmer ****"
+    }
+  ],
+  "source_url": "https://www.beimlenzer.de/"
+}

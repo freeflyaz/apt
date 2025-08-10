@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0e2a47" />
+    <title>Ferienhaus Beim Lenzer · Schwangau Bavaria</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Flatpickr (calendar) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <meta name="description" content="Family Mayer's vacation apartments and guest rooms in Schwangau near the King's Castles. Book your stay at Ferienhaus Beim Lenzer.">
+    <meta name="format-detection" content="telephone=no">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand">
+          <span class="brand-mark" aria-hidden="true">⛰️</span>
+          <span class="brand-text">Beim Lenzer</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#apartments" data-i18n="nav.apartments">Apartments</a>
+          <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+          <a href="#booking" data-i18n="nav.booking">Booking</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <a class="btn btn-primary btn-small" href="#booking" data-i18n="nav.bookNow">Book now</a>
+        <div class="language-switcher">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn active" data-lang="de">DE</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero" aria-label="Alpine holiday apartments">
+        <div class="hero-media" role="img" aria-label="Mountain landscape near the Allgäu"></div>
+        <div class="container hero-content">
+          <h1 class="hero-title" data-i18n="hero.title">Alpine stays at Beim Lenzer</h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">Bright, modern Ferienwohnungen in the heart of the Allgäu.</p>
+          <div class="hero-cta">
+            <a href="#apartments" class="btn btn-light" data-i18n="hero.viewApartments">View apartments</a>
+            <a href="#booking" class="btn btn-primary" data-i18n="hero.checkAvailability">Check availability</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Highlights -->
+      <section class="section section-features">
+        <div class="container">
+          <ul class="features">
+            <li>
+              <div class="icon">🏔️</div>
+              <div class="feature-text">
+                <h3 data-i18n="features.location">Allgäu location</h3>
+                <p data-i18n="features.locationDesc">Trails, lakes and castles within easy reach.</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">🛏️</div>
+              <div class="feature-text">
+                <h3 data-i18n="features.comfort">Modern comfort</h3>
+                <p data-i18n="features.comfortDesc">Fresh interiors, fully equipped kitchenettes.</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">🌐</div>
+              <div class="feature-text">
+                <h3 data-i18n="features.wifi">Fast Wi‑Fi</h3>
+                <p data-i18n="features.wifiDesc">Stay connected while you unwind.</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">🚗</div>
+              <div class="feature-text">
+                <h3 data-i18n="features.access">Easy access</h3>
+                <p data-i18n="features.accessDesc">On‑site parking and self check‑in.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Apartments -->
+      <section id="apartments" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title" data-i18n="section.apartments">Apartments</h2>
+            <p class="section-desc" data-i18n="section.apartmentsDesc">Choose the perfect base for hiking, biking and lake days.</p>
+          </div>
+          <div id="apartmentCards" class="cards"></div>
+        </div>
+      </section>
+
+      <!-- Common Information -->
+      <section class="section section-muted">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title" data-i18n="section.whatsIncluded">What's Included</h2>
+            <p class="section-desc" data-i18n="section.whatsIncludedDesc">All apartments feature modern amenities for a comfortable stay.</p>
+          </div>
+          <div class="features">
+            <div class="feature-item">
+              <h3>🛏️ <span data-i18n="included.bedrooms">Comfortable Bedrooms</span></h3>
+              <p data-i18n="included.bedroomsDesc">All apartments include comfortable bedrooms with quality linens and sleeping arrangements for the specified number of guests.</p>
+            </div>
+            <div class="feature-item">
+              <h3>🍳 <span data-i18n="included.kitchen">Fully Equipped Kitchen</span></h3>
+              <p data-i18n="included.kitchenDesc">Each apartment features a complete kitchen with modern appliances, cookware, and all essentials for preparing meals during your stay.</p>
+            </div>
+            <div class="feature-item">
+              <h3>🧹 <span data-i18n="included.cleaning">Cleaning Service</span></h3>
+              <p data-i18n="included.cleaningDesc">Professional cleaning is included with every booking. The cleaning fee covers thorough preparation before your arrival and cleaning after your departure.</p>
+            </div>
+            <div class="feature-item">
+              <h3>🌐 <span data-i18n="included.wifi">Free Wi-Fi & Utilities</span></h3>
+              <p data-i18n="included.wifiDesc">Stay connected with complimentary high-speed internet access. All utilities including heating, electricity, and water are included in your stay.</p>
+            </div>
+            <div class="feature-item">
+              <h3>🚗 <span data-i18n="included.parking">Parking Available</span></h3>
+              <p data-i18n="included.parkingDesc">Convenient on-site parking is available for guests. No need to worry about finding parking in the area.</p>
+            </div>
+            <div class="feature-item">
+              <h3>📞 <span data-i18n="included.support">Local Support</span></h3>
+              <p data-i18n="included.supportDesc">Our hosts Christine and Roland Pfeiffer are available to assist with any questions or recommendations for your stay in the beautiful Allgäu region.</p>
+            </div>
+          </div>
+          <div class="section-footer">
+            <p><strong data-i18n="included.pricing">Pricing Information:</strong></p>
+            <ul>
+              <li data-i18n="included.pricingItem1">Prices shown are per night and include cleaning service</li>
+              <li data-i18n="included.pricingItem2">High season rates apply during peak periods (summer and holidays)</li>
+              <li data-i18n="included.pricingItem3">Low season rates available during off-peak times</li>
+              <li data-i18n="included.pricingItem4">Minimum stay: 3 nights for all apartments</li>
+              <li data-i18n="included.pricingItem5">Local tourist tax may apply and is paid directly to the municipality</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section id="gallery" class="section section-muted">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title" data-i18n="section.gallery">Gallery</h2>
+            <p class="section-desc" data-i18n="section.galleryDesc">Photos from our apartments and the beautiful Allgäu surroundings.</p>
+          </div>
+          <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all" data-i18n="gallery.allPhotos">All Photos</button>
+            <button class="filter-btn" data-filter="saeuling">Säuling</button>
+            <button class="filter-btn" data-filter="branderschrofen">Branderschrofen</button>
+            <button class="filter-btn" data-filter="geiselstein">Geiselstein</button>
+          </div>
+          <div class="gallery-grid" id="galleryGrid"></div>
+        </div>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+          <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+          <img id="lightboxImg" alt="Photo preview" />
+          <p id="lightboxCaption" class="lightbox-caption"></p>
+        </div>
+      </section>
+
+      <!-- Booking -->
+      <section id="booking" class="section">
+        <div class="container booking">
+          <div class="booking-left">
+            <div class="section-head">
+              <h2 class="section-title" data-i18n="section.booking">Booking</h2>
+              <p class="section-desc" data-i18n="section.bookingDesc">Select your dates to request a stay. You'll receive a personal confirmation.</p>
+            </div>
+
+            <form id="bookingForm" class="form" novalidate>
+              <div class="form-row">
+                <label for="apartmentSelect" data-i18n="form.apartment">Apartment</label>
+                <select id="apartmentSelect" required></select>
+              </div>
+
+              <div class="form-row">
+                <label for="dateRange" data-i18n="form.dates">Dates</label>
+                <input id="dateRange" name="dateRange" type="text" placeholder="Check‑in → Check‑out" required />
+                <small id="dateHelp" class="help"></small>
+              </div>
+
+              <div class="form-row form-row-grid">
+                <div>
+                  <label for="adults" data-i18n="form.adults">Adults</label>
+                  <input id="adults" type="number" min="1" value="2" required />
+                </div>
+                <div>
+                  <label for="children" data-i18n="form.children">Children</label>
+                  <input id="children" type="number" min="0" value="0" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <label for="name" data-i18n="form.name">Name</label>
+                <input id="name" type="text" autocomplete="name" required />
+              </div>
+              <div class="form-row">
+                <label for="email" data-i18n="form.email">Email</label>
+                <input id="email" type="email" autocomplete="email" required />
+              </div>
+              <div class="form-row">
+                <label for="phone" data-i18n="form.phone">Phone (optional)</label>
+                <input id="phone" type="tel" autocomplete="tel" />
+              </div>
+              <div class="form-row">
+                <label for="message" data-i18n="form.message">Message (optional)</label>
+                <textarea id="message" rows="3" data-i18n-placeholder="form.messagePlaceholder" placeholder="Any questions or requests?" spellcheck="true"></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button type="button" id="requestBtn" class="btn btn-primary" data-i18n="form.requestBooking">Request booking</button>
+                <p class="fineprint" data-i18n="form.noPayment">No payment now. We will confirm availability by email.</p>
+                <div id="formMessage" class="form-message" style="display: none;"></div>
+              </div>
+            </form>
+          </div>
+
+          <aside class="booking-summary">
+            <h3 data-i18n="summary.yourStay">Your stay</h3>
+            <ul class="summary-list">
+              <li><span data-i18n="summary.apartment">Apartment:</span> <strong id="summaryApartment">–</strong></li>
+              <li><span data-i18n="summary.dates">Dates:</span> <strong id="summaryDates">–</strong></li>
+              <li><span data-i18n="summary.nights">Nights:</span> <strong id="summaryNights">0</strong></li>
+              <li><span data-i18n="summary.guests">Guests:</span> <strong id="summaryGuests">2</strong></li>
+            </ul>
+            <div class="divider"></div>
+            <ul class="summary-list">
+              <li><span data-i18n="summary.nightlyRate">Nightly rate:</span> <strong id="summaryRate">€0</strong></li>
+              <li><span data-i18n="summary.cleaning">Cleaning:</span> <strong id="summaryCleaning">€0</strong></li>
+              <li><span data-i18n="summary.subtotal">Subtotal:</span> <strong id="summarySubtotal">€0</strong></li>
+              <li class="total"><span data-i18n="summary.total">Total:</span> <strong id="summaryTotal">€0</strong></li>
+            </ul>
+            <p class="tax-note" data-i18n="summary.taxNote">Incl. VAT where applicable; excludes local tourist tax.</p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Location / Contact -->
+      <section id="contact" class="section section-muted">
+        <div class="container contact">
+          <div class="contact-info">
+            <h2 class="section-title" data-i18n="section.contact">Contact</h2>
+            <p class="section-desc" data-i18n="section.contactDesc">Christine & Roland Pfeiffer – get in touch to book your stay.</p>
+            <ul class="contact-list">
+              <li><strong data-i18n="contact.email">Email:</strong> <a id="contactEmail" href="mailto:info@beimlenzer.de">info@beimlenzer.de</a></li>
+              <li><strong data-i18n="contact.phone">Phone:</strong> <a href="tel:+4917653018008">+49 (0)176-530 18008</a></li>
+              <li><strong data-i18n="contact.address">Address:</strong> Forchenweg 7, D-87645 Schwangau, Germany</li>
+              <li><strong data-i18n="contact.website">Website:</strong> <a href="https://www.beimlenzer.de" target="_blank" rel="noopener">www.beimlenzer.de</a></li>
+            </ul>
+            <p class="fineprint" data-i18n="contact.providedBy">Contact details provided by the owner.</p>
+          </div>
+          <div class="contact-map">
+            <iframe title="Map of Forchenweg 7, Schwangau" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1344.7!2d10.7524!3d47.5789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479c934b81fef1b3%3A0x1f2345678abcdef0!2sForchenweg%207%2C%2087645%20Schwangau%2C%20Germany!5e1!3m2!1sen!2sde!4v1687169999999" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="brand-mark">⛰️</span>
+          <span class="brand-text">Beim Lenzer</span>
+        </div>
+        <div class="footer-meta">
+          <span>© <span id="year"></span> Beim Lenzer</span>
+          <a href="#" aria-label="Impressum">Impressum</a>
+          <a href="#" aria-label="Privacy">Privacy</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./app.js"></script>
+    
+    <!-- GoatCounter Analytics - Simple, privacy-friendly visitor tracking -->
+    <script data-goatcounter="https://beimlenzer.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+  </body>
+</html>
